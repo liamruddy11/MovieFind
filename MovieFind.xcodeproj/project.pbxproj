@@ -11,14 +11,23 @@
 		F56A6252293BEBC3009DB1CA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56A6251293BEBC3009DB1CA /* ContentView.swift */; };
 		F56A6254293BEBC7009DB1CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F56A6253293BEBC7009DB1CA /* Assets.xcassets */; };
 		F56A6257293BEBC7009DB1CA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F56A6256293BEBC7009DB1CA /* Preview Assets.xcassets */; };
+		F56A625E293BF2D8009DB1CA /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56A625D293BF2D8009DB1CA /* Movie.swift */; };
+		F56A6260293BF820009DB1CA /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56A625F293BF820009DB1CA /* ListViewModel.swift */; };
+		F58AD3452941558000570EEE /* MovieDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58AD3442941558000570EEE /* MovieDetailView.swift */; };
+		F58AD3472941582B00570EEE /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58AD3462941582B00570EEE /* DetailViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F546E3AA2942BBAB00BA4707 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		F56A624C293BEBC3009DB1CA /* MovieFind.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieFind.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F56A624F293BEBC3009DB1CA /* MovieFindApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieFindApp.swift; sourceTree = "<group>"; };
 		F56A6251293BEBC3009DB1CA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F56A6253293BEBC7009DB1CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F56A6256293BEBC7009DB1CA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F56A625D293BF2D8009DB1CA /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		F56A625F293BF820009DB1CA /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
+		F58AD3442941558000570EEE /* MovieDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailView.swift; sourceTree = "<group>"; };
+		F58AD3462941582B00570EEE /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +60,13 @@
 		F56A624E293BEBC3009DB1CA /* MovieFind */ = {
 			isa = PBXGroup;
 			children = (
+				F546E3AA2942BBAB00BA4707 /* Info.plist */,
 				F56A624F293BEBC3009DB1CA /* MovieFindApp.swift */,
+				F56A625D293BF2D8009DB1CA /* Movie.swift */,
+				F56A625F293BF820009DB1CA /* ListViewModel.swift */,
+				F58AD3462941582B00570EEE /* DetailViewModel.swift */,
 				F56A6251293BEBC3009DB1CA /* ContentView.swift */,
+				F58AD3442941558000570EEE /* MovieDetailView.swift */,
 				F56A6253293BEBC7009DB1CA /* Assets.xcassets */,
 				F56A6255293BEBC7009DB1CA /* Preview Content */,
 			);
@@ -137,8 +151,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F58AD3452941558000570EEE /* MovieDetailView.swift in Sources */,
+				F58AD3472941582B00570EEE /* DetailViewModel.swift in Sources */,
 				F56A6252293BEBC3009DB1CA /* ContentView.swift in Sources */,
 				F56A6250293BEBC3009DB1CA /* MovieFindApp.swift in Sources */,
+				F56A6260293BF820009DB1CA /* ListViewModel.swift in Sources */,
+				F56A625E293BF2D8009DB1CA /* Movie.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,11 +288,12 @@
 				DEVELOPMENT_TEAM = 74D7ZGA35K;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MovieFind/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -299,11 +318,12 @@
 				DEVELOPMENT_TEAM = 74D7ZGA35K;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MovieFind/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
